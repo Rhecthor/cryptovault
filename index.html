@@ -78,56 +78,43 @@
 
 <body class="bg-dark text-white overflow-x-hidden crypto-pattern">
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 transition-all duration-300" id="navbar">
+    <nav class="fixed top-0 w-full z-50 bg-dark transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0">
-                        <div class="flex items-center space-x-2">
-                            <div class="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
-                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                                </svg>
-                            </div>
-                            <h1 class="text-2xl font-bold gradient-text">CryptoVault Pro</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#trading" class="hover:text-primary transition-colors duration-200">Trading</a>
-                        <a href="#features" class="hover:text-primary transition-colors duration-200">Features</a>
-                        <a href="#stats" class="hover:text-primary transition-colors duration-200">Stats</a>
-                        <a href="#about" class="hover:text-primary transition-colors duration-200">About</a>
-                        <a href="#contact" class="hover:text-primary transition-colors duration-200">Contact</a>
-                    </div>
-                </div>
-                <div class="hidden md:block">
-                    <div class="flex items-center space-x-4">
-                        <a href="login.html" class="text-gray-300 hover:text-white transition-colors duration-200 font-medium">
-                            Login
-                        </a>
-                        <a href="signup.html" class="btn-primary text-white px-6 py-2 rounded-lg font-semibold">
-                            Sign Up
-                        </a>
-                    </div>
-                </div>
-                <div class="md:hidden">
-                    <button class="text-white hover:text-primary" onclick="toggleMenu()">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                         </svg>
-                    </button>
+                    </div>
+                    <span class="text-2xl font-bold gradient-text">CryptoVault Pro</span>
+                </div>
+                <!-- Centered Nav Links -->
+                <div class="flex-1 flex justify-center">
+                    <div class="flex space-x-10">
+                         <a href="index.html" class="text-lg font-medium hover:text-primary transition-colors duration-200">Home</a>
+                        <a href="trading.html" class="text-lg font-medium hover:text-primary transition-colors duration-200">Trading</a>
+                        <a href="features.html" class="text-lg font-medium hover:text-primary transition-colors duration-200">Features</a>
+                        <a href="stats.html" class="text-lg font-medium hover:text-primary transition-colors duration-200">Stats</a>
+                        <a href="about.html" class="text-lg font-medium hover:text-primary transition-colors duration-200">About</a>
+                        <a href="contact.html" class="text-lg font-medium hover:text-primary transition-colors duration-200">Contact</a>
+                    </div>
+                </div>
+                <!-- Right Buttons -->
+                <div class="flex items-center space-x-4">
+                    <a href="login.html" class="border border-primary text-primary px-6 py-2 rounded-full font-semibold hover:bg-primary hover:text-white transition-all">Login</a>
+                    <a href="signup.html" class="bg-white text-dark px-6 py-2 rounded-full font-semibold shadow hover:bg-primary hover:text-white transition-all">Sign Up</a>
                 </div>
             </div>
         </div>
         <!-- Mobile menu -->
         <div class="md:hidden hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 bg-dark-light">
-                <a href="#trading" class="block px-3 py-2 hover:text-primary transition-colors">Trading</a>
+                <a href="trading.html" class="block px-3 py-2 hover:text-primary transition-colors">Trading</a>
                 <a href="#features" class="block px-3 py-2 hover:text-primary transition-colors">Features</a>
                 <a href="#stats" class="block px-3 py-2 hover:text-primary transition-colors">Stats</a>
-                <a href="#about" class="block px-3 py-2 hover:text-primary transition-colors">About</a>
+                <a href="about.html" class="block px-3 py-2 hover:text-primary transition-colors">About</a>
                 <a href="#contact" class="block px-3 py-2 hover:text-primary transition-colors">Contact</a>
                 <div class="px-3 py-2 space-y-2">
                     <a href="login.html" class="block w-full text-center py-2 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-all">Login</a>
@@ -145,12 +132,12 @@
                 <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                     Professional
                     <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                        Crypto Trading
+                        Crypto Trading Scanner
                     </span>
                 </h1>
             </div>
             <p class="text-xl md:text-2xl mb-8 text-gray-300 max-w-4xl mx-auto leading-relaxed">
-                Advanced cryptocurrency trading platform with institutional-grade security, 
+                Advanced cryptocurrency trading scanner with institutional-grade security, 
                 real-time analytics, and professional tools for serious traders and investors.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -277,7 +264,7 @@
                 <div class="glassmorphism rounded-xl p-8 card-hover">
                     <div class="bg-gradient-to-r from-primary to-primary-dark rounded-full w-16 h-16 flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-4">Institutional Security</h3>
@@ -539,8 +526,103 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-dark">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">Frequently Asked Questions</h2>
+            <p class="text-lg text-gray-300 text-center mb-10">
+                Get answers to the most common questions about our platform, features, and services.<br>
+                Can't find what you're looking for? Contact our support team.
+            </p>
+            <div class="space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="rounded-2xl glassmorphism p-6 flex items-center justify-between cursor-pointer transition-all duration-200 faq-toggle">
+                    <span class="text-xl font-bold text-white">What is CryptoVault Pro and how does it work?</span>
+                    <button class="faq-btn text-accent text-3xl font-bold focus:outline-none">+</button>
+                </div>
+                <div class="faq-answer hidden px-6 pb-6 text-gray-300">
+                    CryptoVault Pro is an advanced cryptocurrency trading platform offering real-time analytics, institutional-grade security, and professional trading tools for serious traders and investors.
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="rounded-2xl glassmorphism p-6 flex items-center justify-between cursor-pointer transition-all duration-200 faq-toggle">
+                    <span class="text-xl font-bold text-white">Which programming languages and frameworks does CryptoVault support?</span>
+                    <button class="faq-btn text-accent text-3xl font-bold focus:outline-none">+</button>
+                </div>
+                <div class="faq-answer hidden px-6 pb-6 text-gray-300">
+                    CryptoVault supports integration with popular languages and frameworks including Python, JavaScript, PHP, and RESTful APIs for algorithmic trading and automation.
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="rounded-2xl glassmorphism p-6 flex items-center justify-between cursor-pointer transition-all duration-200 faq-toggle">
+                    <span class="text-xl font-bold text-white">Does CryptoVault provide database management services?</span>
+                    <button class="faq-btn text-accent text-3xl font-bold focus:outline-none">+</button>
+                </div>
+                <div class="faq-answer hidden px-6 pb-6 text-gray-300">
+                    Yes, CryptoVault offers secure data storage and management for your trading history, portfolio analytics, and account information with bank-level encryption.
+                </div>
+                <!-- Add more FAQ items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-dark" style="background-image: radial-gradient(circle at 20% 40%, #2563EB22 0%, transparent 70%), radial-gradient(circle at 80% 60%, #05966922 0%, transparent 70%);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">What Our Users Say</h2>
+            <p class="text-lg text-gray-300 text-center mb-10">
+                Real feedback from professional traders and developers using CryptoVault Pro.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glassmorphism rounded-2xl p-8 flex flex-col items-center">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="w-16 h-16 rounded-full mb-4 border-4 border-primary">
+                    <div class="text-lg font-bold text-white mb-1">Victor Jack</div>
+                    <div class="text-sm text-accent mb-2">@iamvictorjack</div>
+                    <p class="text-gray-300 text-center">
+                        CryptoVault's UI makes everything easier for me and the fact that it supports all new technologies was ground breaking. Used CryptoVault for about 3 of my products and never experienced any issues.
+                    </p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="glassmorphism rounded-2xl p-8 flex flex-col items-center">
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User" class="w-16 h-16 rounded-full mb-4 border-4 border-secondary">
+                    <div class="text-lg font-bold text-white mb-1">Nnaji Christian</div>
+                    <div class="text-sm text-accent mb-2">@UI_Ninja</div>
+                    <p class="text-gray-300 text-center">
+                        I'm thoroughly impressed with CryptoVault Pro. The deployment process was lightning-fast, and the features are truly amazing. As a developer and designer, I appreciate the ease of use and the platform's ability to streamline my workflow.
+                    </p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="glassmorphism rounded-2xl p-8 flex flex-col items-center">
+                    <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="User" class="w-16 h-16 rounded-full mb-4 border-4 border-accent">
+                    <div class="text-lg font-bold text-white mb-1">Okunade-Praise Peculiar</div>
+                    <div class="text-sm text-accent mb-2">@flameztech</div>
+                    <p class="text-gray-300 text-center">
+                        CryptoVault stands out with its speed, accuracy, and security. I've been using it since the MVP stage, and the recent updates have made building demo MVPs for startups much easier.
+                    </p>
+                </div>
+                <!-- Testimonial 4 -->
+                <div class="glassmorphism rounded-2xl p-8 flex flex-col items-center md:col-span-1">
+                    <img src="https://randomuser.me/api/portraits/men/77.jpg" alt="User" class="w-16 h-16 rounded-full mb-4 border-4 border-primary">
+                    <div class="text-lg font-bold text-white mb-1">David Nelson</div>
+                    <div class="text-sm text-accent mb-2">@davidnelson</div>
+                    <p class="text-gray-300 text-center">
+                        Love how CryptoVault handles complex deployments with ease. Definitely worth the investment!
+                    </p>
+                </div>
+                <!-- Testimonial 5 -->
+                <div class="glassmorphism rounded-2xl p-8 flex flex-col items-center md:col-span-2">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User" class="w-16 h-16 rounded-full mb-4 border-4 border-secondary">
+                    <div class="text-lg font-bold text-white mb-1">Robin Sui</div>
+                    <div class="text-sm text-accent mb-2">@robinsui</div>
+                    <p class="text-gray-300 text-center">
+                        We've created a new technology that helps developers with smooth and fast deployments. As the founder of CryptoVault, I believe the moon is definitely just our starting point for revolutionizing the development experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="bg-dark py-16">
+    <footer class="bg-dark py-16" style="background-image: linear-gradient(135deg, #7C3AED 0%, #2563EB 100%), url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1500&q=80'); background-size: cover; background-blend-mode: multiply;">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
@@ -647,6 +729,21 @@
         document.querySelector('form[action="newsletter.php"]').addEventListener('submit', function(e) {
             // You can add client-side validation here
             console.log('Newsletter form submitted - ready for PHP processing');
+        });
+
+        // FAQ toggle logic
+        document.querySelectorAll('.faq-toggle').forEach((item, idx) => {
+            item.addEventListener('click', function() {
+                const answer = document.querySelectorAll('.faq-answer')[idx];
+                const btn = item.querySelector('.faq-btn');
+                if (answer.classList.contains('hidden')) {
+                    answer.classList.remove('hidden');
+                    btn.textContent = '−';
+                } else {
+                    answer.classList.add('hidden');
+                    btn.textContent = '+';
+                }
+            });
         });
     </script>
 </body>
