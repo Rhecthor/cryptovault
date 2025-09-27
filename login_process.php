@@ -66,7 +66,7 @@ if (empty($errors)) {
             $_SESSION['user_email'] = $user['email'];
             $_SESSION['logged_in'] = true;
             // Redirect to dashboard
-            header('Location: dashboard.php');
+            header('Location: dashboard.html');
             exit;
         } else {
             $errors[] = "Invalid email or password.";

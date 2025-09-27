@@ -90,8 +90,8 @@
                     </div>
                     <span class="text-2xl font-bold gradient-text">CryptoVault Pro</span>
                 </div>
-                <!-- Centered Nav Links -->
-                <div class="flex-1 flex justify-center">
+                <!-- Centered Nav Links (hidden on mobile) -->
+                <div class="flex-1 hidden md:flex justify-center">
                     <div class="flex space-x-10">
                          <a href="index.html" class="text-lg font-medium hover:text-primary transition-colors duration-200">Home</a>
                         <a href="trading.html" class="text-lg font-medium hover:text-primary transition-colors duration-200">Trading</a>
@@ -101,21 +101,28 @@
                         <a href="contact.html" class="text-lg font-medium hover:text-primary transition-colors duration-200">Contact</a>
                     </div>
                 </div>
-                <!-- Right Buttons -->
-                <div class="flex items-center space-x-4">
+                <!-- Right Buttons (hidden on mobile) -->
+                <div class="hidden md:flex items-center space-x-4">
                     <a href="login.html" class="border border-primary text-primary px-6 py-2 rounded-full font-semibold hover:bg-primary hover:text-white transition-all">Login</a>
                     <a href="signup.html" class="bg-white text-dark px-6 py-2 rounded-full font-semibold shadow hover:bg-primary hover:text-white transition-all">Sign Up</a>
                 </div>
+                <!-- Hamburger for mobile -->
+                <button class="md:hidden flex flex-col justify-center items-center w-10 h-10 group" onclick="toggleMenu()" aria-label="Open Menu">
+                    <span class="block w-8 h-1 bg-primary rounded transition-all duration-300 mb-1"></span>
+                    <span class="block w-5 h-1 bg-primary rounded transition-all duration-300 mb-1"></span>
+                    <span class="block w-8 h-1 bg-primary rounded transition-all duration-300"></span>
+                </button>
             </div>
         </div>
         <!-- Mobile menu -->
         <div class="md:hidden hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 bg-dark-light">
+                <a href="index.html" class="block px-3 py-2 hover:text-primary transition-colors">Home</a>
                 <a href="trading.html" class="block px-3 py-2 hover:text-primary transition-colors">Trading</a>
-                <a href="#features" class="block px-3 py-2 hover:text-primary transition-colors">Features</a>
-                <a href="#stats" class="block px-3 py-2 hover:text-primary transition-colors">Stats</a>
+                <a href="features.html" class="block px-3 py-2 hover:text-primary transition-colors">Features</a>
+                <a href="stats.html" class="block px-3 py-2 hover:text-primary transition-colors">Stats</a>
                 <a href="about.html" class="block px-3 py-2 hover:text-primary transition-colors">About</a>
-                <a href="#contact" class="block px-3 py-2 hover:text-primary transition-colors">Contact</a>
+                <a href="contact.html" class="block px-3 py-2 hover:text-primary transition-colors">Contact</a>
                 <div class="px-3 py-2 space-y-2">
                     <a href="login.html" class="block w-full text-center py-2 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-all">Login</a>
                     <a href="signup.html" class="block w-full text-center py-2 btn-primary text-white rounded-lg">Sign Up</a>

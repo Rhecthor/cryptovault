@@ -53,7 +53,7 @@ if (empty($password)) {
 } elseif (strlen($password) < 8) {
     $errors[] = "Password must be at least 8 characters long.";
 } elseif (!preg_match('/[A-Z]/', $password)) {
-    $errors[] = "Password must contain at least one uppercase letter.";
+    $errors[] = "Password must contain at least one uppercase letter.";            
 } elseif (!preg_match('/\d/', $password)) {
     $errors[] = "Password must contain at least one number.";
 }
