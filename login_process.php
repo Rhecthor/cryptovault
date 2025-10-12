@@ -38,14 +38,15 @@ if (empty($password)) {
 
 // If no validation errors, process the login
 if (empty($errors)) {
-    // Database connection (adjust credentials as needed)
-    $servername = "localhost";
-    $username = "root";
-    $password_db = "";
-    $dbname = "cryptovault";
-    
+    // Database connection
+    $servername = "db.pxxl.pro";
+    $port = "33029";
+    $username = "user_c40aec2d";
+    $password_db = "52ac4e1a11404011fb6b6d4572b7ddd30";
+    $dbname = "db_961583c9";
+
     // Create connection
-    $conn = new mysqli($servername, $username, $password_db, $dbname);
+    $conn = new mysqli($servername, $username, $password_db, $dbname, $port);
     
     // Check connection
     if ($conn->connect_error) {

@@ -72,14 +72,15 @@ if (!in_array($account_type, ['individual', 'institutional'])) {
 
 // If no validation errors, process the registration
 if (empty($errors)) {
-    // Database connection (adjust credentials as needed)
-    $host = 'localhost';
-    $dbname = 'cryptovault';
-    $username = 'root';
-    $password_db = '';
-    
+    // Database connection
+    $host = 'db.pxxl.pro';
+    $port = '33029';
+    $dbname = 'db_961583c9';
+    $username = 'user_c40aec2d';
+    $password_db = '52ac4e1a11404011fb6b6d4572b7ddd30';
+
     try {
-        $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password_db);
+        $pdo = new PDO("mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4", $username, $password_db);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
         // Check if email already exists
@@ -127,7 +128,7 @@ if (empty($errors)) {
             $user_id = $pdo->lastInsertId();
             
             // Send verification email
-            $verification_link = "https://your-domain.com/verify.php?token=" . $verification_token;
+            $verification_link = "https://cryptovault.pro/verify.php?token=" . $verification_token;
             $subject = "Verify Your CryptoVault Pro Account";
             
             $emailBody = "
