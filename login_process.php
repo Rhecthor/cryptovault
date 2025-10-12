@@ -39,7 +39,7 @@ if (empty($password)) {
 // If no validation errors, process the login
 if (empty($errors)) {
     // Database connection
-    $servername = "db.pxxl.pro";
+    $servername = "db.pxxl.pro:33029";
     $port = "33029";
     $username = "user_c40aec2d";
     $password_db = "52ac4e1a11404011fb6b6d4572b7ddd30";

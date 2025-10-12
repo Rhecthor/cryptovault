@@ -25,11 +25,11 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $error = "Please enter a valid email address.";
 } else {
     // Database connection
-    $servername = "db.pxxl.pro";
+    $servername = "db.pxxl.pro:33029";
     $port = "33029";
     $username = "user_c40aec2d";
     $password = "52ac4e1a11404011fb6b6d4572b7ddd30";
-    $dbname = "db_961583c9";
+    $dbname = "db_961503c9";
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname, $port);

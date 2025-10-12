@@ -73,7 +73,7 @@ if (!in_array($account_type, ['individual', 'institutional'])) {
 // If no validation errors, process the registration
 if (empty($errors)) {
     // Database connection
-    $host = 'db.pxxl.pro';
+    $host = 'db.pxxl.pro:33029';
     $port = '33029';
     $dbname = 'db_961583c9';
     $username = 'user_c40aec2d';
