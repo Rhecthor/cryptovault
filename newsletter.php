@@ -31,7 +31,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $dbname = "cryptovault";
 
     // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    $conn = new mysqli($servername = "db.pxxl.pro", $username = "user_c40aec2d", $password = "52ac4e1a11404011fb6b64d572b7ddd3", $dbname = "db_961503c9");
 
     // Check connection
     if ($conn->connect_error) {
