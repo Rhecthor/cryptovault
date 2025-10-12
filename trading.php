@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CryptoVault Pro - Features</title>
+    <title>CryptoVault Pro - Trading</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -89,73 +89,80 @@
         </div>
     </nav>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-dark-light">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Trading Platform Preview -->
+    <section id="trading" class="py-20 bg-dark relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">Get in Touch</h2>
-                <p class="text-xl text-gray-300">
-                    Have questions? We're here to help you succeed in your crypto journey.
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Professional Trading Interface</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Advanced charting tools, real-time data, and institutional-grade execution engine
                 </p>
             </div>
-            <!-- Contact form ready for PHP processing -->
-            <form method="POST" action="contact.php" class="glassmorphism rounded-2xl p-8">
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                        <label for="name" class="block text-sm font-medium mb-2">Name</label>
-                        <input 
-                            type="text" 
-                            id="name"
-                            name="name"
-                            required
-                            class="w-full px-4 py-3 rounded-lg bg-dark border border-gray-600 text-white placeholder-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
-                            placeholder="Your name"
-                        >
+            <div class="relative">
+                <div class="glassmorphism rounded-2xl p-8 mb-8">
+                    <div class="grid lg:grid-cols-3 gap-8">
+                        <div class="lg:col-span-2">
+                            <div class="bg-dark-light rounded-xl p-6 h-80 flex items-center justify-center">
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
+                                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-2">Advanced Charts</h3>
+                                    <p class="text-gray-400">TradingView integration with 100+ indicators</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="bg-dark-light rounded-xl p-4">
+                                <h4 class="font-semibold mb-2">Order Book</h4>
+                                <div class="space-y-2 text-sm">
+                                    <div class="flex justify-between">
+                                        <span class="text-red-400">43,250.00</span>
+                                        <span class="text-gray-400">0.5432</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-red-400">43,245.50</span>
+                                        <span class="text-gray-400">1.2341</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-red-400">43,240.25</span>
+                                        <span class="text-gray-400">0.8765</span>
+                                    </div>
+                                    <div class="border-t border-gray-600 pt-2">
+                                        <div class="flex justify-between font-semibold">
+                                            <span class="text-white">43,235.75</span>
+                                            <span class="text-success">+2.5%</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-success">43,230.00</span>
+                                        <span class="text-gray-400">2.1234</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-success">43,225.50</span>
+                                        <span class="text-gray-400">1.5678</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark-light rounded-xl p-4">
+                                <h4 class="font-semibold mb-2">Quick Trade</h4>
+                                <div class="space-y-3">
+                                    <div class="flex space-x-2">
+                                        <button class="flex-1 bg-success text-white py-2 rounded-lg text-sm font-semibold">BUY</button>
+                                        <button class="flex-1 bg-error text-white py-2 rounded-lg text-sm font-semibold">SELL</button>
+                                    </div>
+                                    <input type="text" placeholder="Amount" class="w-full bg-dark border border-gray-600 rounded-lg px-3 py-2 text-sm">
+                                    <button class="w-full bg-primary text-white py-2 rounded-lg text-sm font-semibold">Place Order</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <label for="email" class="block text-sm font-medium mb-2">Email</label>
-                        <input 
-                            type="email" 
-                            id="email"
-                            name="email"
-                            required
-                            class="w-full px-4 py-3 rounded-lg bg-dark border border-gray-600 text-white placeholder-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
-                            placeholder="your@email.com"
-                        >
-                    </div>
                 </div>
-                <div class="mb-6">
-                    <label for="subject" class="block text-sm font-medium mb-2">Subject</label>
-                    <input 
-                        type="text" 
-                        id="subject"
-                        name="subject"
-                        required
-                        class="w-full px-4 py-3 rounded-lg bg-dark border border-gray-600 text-white placeholder-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
-                        placeholder="How can we help?"
-                    >
-                </div>
-                <div class="mb-6">
-                    <label for="message" class="block text-sm font-medium mb-2">Message</label>
-                    <textarea 
-                        id="message"
-                        name="message"
-                        rows="4"
-                        required
-                        class="w-full px-4 py-3 rounded-lg bg-dark border border-gray-600 text-white placeholder-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
-                        placeholder="Your message..."
-                    ></textarea>
-                </div>
-                <button 
-                    type="submit"
-                    class="w-full btn-primary text-white py-3 rounded-lg font-semibold"
-                >
-                    Send Message
-                </button>
-            </form>
+            </div>
         </div>
     </section>
-
      <!-- Footer -->
     <footer class="bg-dark py-16" style="background-image: linear-gradient(135deg, #7C3AED 0%, #2563EB 100%), url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1500&q=80'); background-size: cover; background-blend-mode: multiply;">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

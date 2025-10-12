@@ -13,7 +13,7 @@ header('Content-Type: text/html; charset=UTF-8');
 
 // Check if form was submitted via POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: index.html');
+    header('Location: index.php');
     exit;
 }
 
@@ -24,7 +24,7 @@ $email = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $error = "Please enter a valid email address.";
 } else {
-    // Database connection (adjust credentials as needed)
+    // Database connection 
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -142,7 +142,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
                 <p class="mb-6"><?php echo htmlspecialchars($error); ?></p>
             <?php endif; ?>
             
-            <a href="index.html" class="bg-primary hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 inline-block">
+            <a href="index.php" class="bg-primary hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 inline-block">
                 Back to Home
             </a>
         </div>

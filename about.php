@@ -89,74 +89,95 @@
         </div>
     </nav>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-dark-light">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">Get in Touch</h2>
-                <p class="text-xl text-gray-300">
-                    Have questions? We're here to help you succeed in your crypto journey.
-                </p>
+     <!-- About Section -->
+    <section id="about" class="py-20 bg-dark-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                        Built for 
+                        <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                            Professional Traders
+                        </span>
+                    </h2>
+                    <p class="text-xl text-gray-300 mb-8">
+                        CryptoVault Pro combines institutional-grade infrastructure with cutting-edge technology 
+                        to deliver the most advanced cryptocurrency trading platform available today.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Dedicated Account Manager</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>API Access & Algorithmic Trading</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Institutional Custody Solutions</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Advanced Risk Management Tools</span>
+                        </li>
+                    </ul>
+                    <a href="signup.php" class="btn-primary text-white px-8 py-4 rounded-lg text-lg font-semibold inline-block">
+                        Open Pro Account
+                    </a>
+                </div>
+                <div class="relative">
+                    <div class="glassmorphism rounded-2xl p-8">
+                        <div class="text-center mb-6">
+                            <div class="bg-gradient-to-r from-primary to-accent rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                                <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4">Professional Trading Suite</h3>
+                            <p class="text-gray-300 mb-6">Everything you need for professional cryptocurrency trading</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between p-3 bg-dark-light rounded-lg">
+                                <span class="text-sm">Advanced Order Types</span>
+                                <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-dark-light rounded-lg">
+                                <span class="text-sm">Portfolio Analytics</span>
+                                <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-dark-light rounded-lg">
+                                <span class="text-sm">Risk Management</span>
+                                <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-dark-light rounded-lg">
+                                <span class="text-sm">API Integration</span>
+                                <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- Contact form ready for PHP processing -->
-            <form method="POST" action="contact.php" class="glassmorphism rounded-2xl p-8">
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                        <label for="name" class="block text-sm font-medium mb-2">Name</label>
-                        <input 
-                            type="text" 
-                            id="name"
-                            name="name"
-                            required
-                            class="w-full px-4 py-3 rounded-lg bg-dark border border-gray-600 text-white placeholder-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
-                            placeholder="Your name"
-                        >
-                    </div>
-                    <div>
-                        <label for="email" class="block text-sm font-medium mb-2">Email</label>
-                        <input 
-                            type="email" 
-                            id="email"
-                            name="email"
-                            required
-                            class="w-full px-4 py-3 rounded-lg bg-dark border border-gray-600 text-white placeholder-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
-                            placeholder="your@email.com"
-                        >
-                    </div>
-                </div>
-                <div class="mb-6">
-                    <label for="subject" class="block text-sm font-medium mb-2">Subject</label>
-                    <input 
-                        type="text" 
-                        id="subject"
-                        name="subject"
-                        required
-                        class="w-full px-4 py-3 rounded-lg bg-dark border border-gray-600 text-white placeholder-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
-                        placeholder="How can we help?"
-                    >
-                </div>
-                <div class="mb-6">
-                    <label for="message" class="block text-sm font-medium mb-2">Message</label>
-                    <textarea 
-                        id="message"
-                        name="message"
-                        rows="4"
-                        required
-                        class="w-full px-4 py-3 rounded-lg bg-dark border border-gray-600 text-white placeholder-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
-                        placeholder="Your message..."
-                    ></textarea>
-                </div>
-                <button 
-                    type="submit"
-                    class="w-full btn-primary text-white py-3 rounded-lg font-semibold"
-                >
-                    Send Message
-                </button>
-            </form>
         </div>
     </section>
 
-     <!-- Footer -->
+      <!-- Footer -->
     <footer class="bg-dark py-16" style="background-image: linear-gradient(135deg, #7C3AED 0%, #2563EB 100%), url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1500&q=80'); background-size: cover; background-blend-mode: multiply;">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 mb-8">

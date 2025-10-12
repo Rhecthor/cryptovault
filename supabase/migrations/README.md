@@ -45,7 +45,7 @@ A professional cryptocurrency trading platform landing page built with HTML, Tai
 
 ```
 cryptovault/
-├── index.html          # Main landing page
+├── index.php          # Main landing page
 ├── contact.php         # Contact form handler
 ├── newsletter.php      # Newsletter signup handler
 ├── database.sql        # Database schema
@@ -73,8 +73,8 @@ cryptovault/
 
 ### Customization
 
-1. **Colors**: Modify the Tailwind config in `index.html` to change the color scheme
-2. **Content**: Update text content throughout `index.html`
+1. **Colors**: Modify the Tailwind config in `index.php` to change the color scheme
+2. **Content**: Update text content throughout `index.php`
 3. **Database**: Modify table structures in `database.sql` as needed
 4. **Styling**: Add custom CSS for additional styling
 5. **Functionality**: Extend PHP files for additional features

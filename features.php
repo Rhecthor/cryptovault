@@ -1,3 +1,4 @@
+<!-- Example: features.php (repeat for stats.php, about.php, contact.php) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,7 +59,7 @@
                 <!-- Centered Nav Links -->
                 <div class="flex-1 flex justify-center">
                     <div class="flex space-x-10">
-                         <a href="index.php" class="text-lg font-medium hover:text-primary transition-colors duration-200">Home</a>
+                        <a href="index.php" class="text-lg font-medium hover:text-primary transition-colors duration-200">Home</a>
                         <a href="trading.php" class="text-lg font-medium hover:text-primary transition-colors duration-200">Trading</a>
                         <a href="features.php" class="text-lg font-medium hover:text-primary transition-colors duration-200">Features</a>
                         <a href="stats.php" class="text-lg font-medium hover:text-primary transition-colors duration-200">Stats</a>
@@ -76,6 +77,7 @@
         <!-- Mobile menu -->
         <div class="md:hidden hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 bg-dark-light">
+                 <a href="index.php" class="text-lg font-medium hover:text-primary transition-colors duration-200">Home</a>
                 <a href="#trading" class="block px-3 py-2 hover:text-primary transition-colors">Trading</a>
                 <a href="#features" class="block px-3 py-2 hover:text-primary transition-colors">Features</a>
                 <a href="#stats" class="block px-3 py-2 hover:text-primary transition-colors">Stats</a>
@@ -89,70 +91,93 @@
         </div>
     </nav>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-dark-light">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="fixed top-0 w-full z-50 bg-dark transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <span class="text-2xl font-bold" style="background: linear-gradient(135deg, #2563EB, #7C3AED, #059669); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">CryptoVault Pro</span>
+                </div>
+                <div class="flex-1 flex justify-center">
+                    <div class="flex space-x-10">
+                        <a href="trading.php" class="text-lg font-medium hover:text-primary transition-colors duration-200">Trading</a>
+                        <a href="features.php" class="text-lg font-medium hover:text-primary transition-colors duration-200">Features</a>
+                        <a href="stats.php" class="text-lg font-medium hover:text-primary transition-colors duration-200">Stats</a>
+                        <a href="about.php" class="text-lg font-medium hover:text-primary transition-colors duration-200">About</a>
+                        <a href="contact.php" class="text-lg font-medium hover:text-primary transition-colors duration-200">Contact</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="login.php" class="border border-primary text-primary px-6 py-2 rounded-full font-semibold hover:bg-primary hover:text-white transition-all">Login</a>
+                    <a href="signup.php" class="bg-white text-dark px-6 py-2 rounded-full font-semibold shadow hover:bg-primary hover:text-white transition-all">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Features Section (copy from index.php) -->
+    <section id="features" class="py-20 bg-dark-light mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">Get in Touch</h2>
-                <p class="text-xl text-gray-300">
-                    Have questions? We're here to help you succeed in your crypto journey.
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Why Choose CryptoVault Pro?</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Professional-grade features designed for serious traders and institutional investors.
                 </p>
             </div>
-            <!-- Contact form ready for PHP processing -->
-            <form method="POST" action="contact.php" class="glassmorphism rounded-2xl p-8">
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                        <label for="name" class="block text-sm font-medium mb-2">Name</label>
-                        <input 
-                            type="text" 
-                            id="name"
-                            name="name"
-                            required
-                            class="w-full px-4 py-3 rounded-lg bg-dark border border-gray-600 text-white placeholder-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
-                            placeholder="Your name"
-                        >
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="glassmorphism rounded-xl p-8 card-hover">
+                    <div class="bg-gradient-to-r from-primary to-primary-dark rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
                     </div>
-                    <div>
-                        <label for="email" class="block text-sm font-medium mb-2">Email</label>
-                        <input 
-                            type="email" 
-                            id="email"
-                            name="email"
-                            required
-                            class="w-full px-4 py-3 rounded-lg bg-dark border border-gray-600 text-white placeholder-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
-                            placeholder="your@email.com"
-                        >
+                    <h3 class="text-xl font-bold mb-4">Institutional Security</h3>
+                    <p class="text-gray-300">
+                        Multi-signature wallets, cold storage, and insurance coverage up to $250M.
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="glassmorphism rounded-xl p-8 card-hover">
+                    <div class="bg-gradient-to-r from-accent to-accent-dark rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
                     </div>
+                    <h3 class="text-xl font-bold mb-4">Ultra-Low Latency</h3>
+                    <p class="text-gray-300">
+                        Sub-millisecond execution with co-located servers and direct market access.
+                    </p>
                 </div>
-                <div class="mb-6">
-                    <label for="subject" class="block text-sm font-medium mb-2">Subject</label>
-                    <input 
-                        type="text" 
-                        id="subject"
-                        name="subject"
-                        required
-                        class="w-full px-4 py-3 rounded-lg bg-dark border border-gray-600 text-white placeholder-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
-                        placeholder="How can we help?"
-                    >
+                <!-- Feature 3 -->
+                <div class="glassmorphism rounded-xl p-8 card-hover">
+                    <div class="bg-gradient-to-r from-secondary to-secondary-dark rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Pro Analytics</h3>
+                    <p class="text-gray-300">
+                        AI-powered insights, algorithmic trading, and comprehensive market analysis.
+                    </p>
                 </div>
-                <div class="mb-6">
-                    <label for="message" class="block text-sm font-medium mb-2">Message</label>
-                    <textarea 
-                        id="message"
-                        name="message"
-                        rows="4"
-                        required
-                        class="w-full px-4 py-3 rounded-lg bg-dark border border-gray-600 text-white placeholder-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
-                        placeholder="Your message..."
-                    ></textarea>
+                <!-- Feature 4 -->
+                <div class="glassmorphism rounded-xl p-8 card-hover">
+                    <div class="bg-gradient-to-r from-warning to-yellow-600 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Dedicated Support</h3>
+                    <p class="text-gray-300">
+                        Personal account managers and priority support for professional traders.
+                    </p>
                 </div>
-                <button 
-                    type="submit"
-                    class="w-full btn-primary text-white py-3 rounded-lg font-semibold"
-                >
-                    Send Message
-                </button>
-            </form>
+            </div>
         </div>
     </section>
 

@@ -1,0 +1,9 @@
+move about.html about.php
+move contact.html contact.php
+move dashboard.html dashboard.php
+move features.html features.php
+move index.html index.php
+move login.html login.php
+move signup.html signup.php
+move stats.html stats.php
+move trading.html trading.php

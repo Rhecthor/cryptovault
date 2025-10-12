@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CryptoVault Pro - Features</title>
+    <title>CryptoVault  - Advanced Crypto Exchange</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -27,11 +27,16 @@
             }
         }
     </script>
+</head>
     <style>
-        .glassmorphism {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+        .gradient-bg {
+            background: linear-gradient(135deg, #2563EB 0%, #7C3AED 50%, #059669 100%);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #2563EB, #7C3AED, #059669);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         .card-hover {
             transition: all 0.3s ease;
@@ -40,9 +45,39 @@
             transform: translateY(-12px);
             box-shadow: 0 25px 50px -12px rgba(37, 99, 235, 0.25);
         }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .animate-pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #2563EB, #1D4ED8);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #1D4ED8, #1E40AF);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.4);
+        }
+        .crypto-pattern {
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(124, 58, 237, 0.1) 0%, transparent 50%);
+        }
     </style>
-</head>
-<body class="bg-dark text-white overflow-x-hidden">
+
+<body class="bg-dark text-white overflow-x-hidden crypto-pattern">
+    <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 bg-dark transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
@@ -58,7 +93,7 @@
                 <!-- Centered Nav Links -->
                 <div class="flex-1 flex justify-center">
                     <div class="flex space-x-10">
-                         <a href="index.php" class="text-lg font-medium hover:text-primary transition-colors duration-200">Home</a>
+                        <a href="index.php" class="text-lg font-medium hover:text-primary transition-colors duration-200">Home</a>
                         <a href="trading.php" class="text-lg font-medium hover:text-primary transition-colors duration-200">Trading</a>
                         <a href="features.php" class="text-lg font-medium hover:text-primary transition-colors duration-200">Features</a>
                         <a href="stats.php" class="text-lg font-medium hover:text-primary transition-colors duration-200">Stats</a>
@@ -76,10 +111,10 @@
         <!-- Mobile menu -->
         <div class="md:hidden hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 bg-dark-light">
-                <a href="#trading" class="block px-3 py-2 hover:text-primary transition-colors">Trading</a>
+                <a href="trading.php" class="block px-3 py-2 hover:text-primary transition-colors">Trading</a>
                 <a href="#features" class="block px-3 py-2 hover:text-primary transition-colors">Features</a>
                 <a href="#stats" class="block px-3 py-2 hover:text-primary transition-colors">Stats</a>
-                <a href="#about" class="block px-3 py-2 hover:text-primary transition-colors">About</a>
+                <a href="about.php" class="block px-3 py-2 hover:text-primary transition-colors">About</a>
                 <a href="#contact" class="block px-3 py-2 hover:text-primary transition-colors">Contact</a>
                 <div class="px-3 py-2 space-y-2">
                     <a href="login.php" class="block w-full text-center py-2 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-all">Login</a>
@@ -89,74 +124,35 @@
         </div>
     </nav>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-dark-light">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Stats Section -->
+    <section id="stats" class="py-20 bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">Get in Touch</h2>
-                <p class="text-xl text-gray-300">
-                    Have questions? We're here to help you succeed in your crypto journey.
-                </p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Trusted by Millions</h2>
+                <p class="text-xl text-gray-300">Leading the industry with proven track record</p>
             </div>
-            <!-- Contact form ready for PHP processing -->
-            <form method="POST" action="contact.php" class="glassmorphism rounded-2xl p-8">
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                        <label for="name" class="block text-sm font-medium mb-2">Name</label>
-                        <input 
-                            type="text" 
-                            id="name"
-                            name="name"
-                            required
-                            class="w-full px-4 py-3 rounded-lg bg-dark border border-gray-600 text-white placeholder-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
-                            placeholder="Your name"
-                        >
-                    </div>
-                    <div>
-                        <label for="email" class="block text-sm font-medium mb-2">Email</label>
-                        <input 
-                            type="email" 
-                            id="email"
-                            name="email"
-                            required
-                            class="w-full px-4 py-3 rounded-lg bg-dark border border-gray-600 text-white placeholder-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
-                            placeholder="your@email.com"
-                        >
-                    </div>
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="glassmorphism rounded-xl p-8">
+                    <div class="text-4xl md:text-5xl font-bold text-primary mb-2">5.2M+</div>
+                    <div class="text-gray-300">Verified Users</div>
                 </div>
-                <div class="mb-6">
-                    <label for="subject" class="block text-sm font-medium mb-2">Subject</label>
-                    <input 
-                        type="text" 
-                        id="subject"
-                        name="subject"
-                        required
-                        class="w-full px-4 py-3 rounded-lg bg-dark border border-gray-600 text-white placeholder-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
-                        placeholder="How can we help?"
-                    >
+                <div class="glassmorphism rounded-xl p-8">
+                    <div class="text-4xl md:text-5xl font-bold text-accent mb-2">$125B+</div>
+                    <div class="text-gray-300">Volume Traded</div>
                 </div>
-                <div class="mb-6">
-                    <label for="message" class="block text-sm font-medium mb-2">Message</label>
-                    <textarea 
-                        id="message"
-                        name="message"
-                        rows="4"
-                        required
-                        class="w-full px-4 py-3 rounded-lg bg-dark border border-gray-600 text-white placeholder-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
-                        placeholder="Your message..."
-                    ></textarea>
+                <div class="glassmorphism rounded-xl p-8">
+                    <div class="text-4xl md:text-5xl font-bold text-secondary mb-2">200+</div>
+                    <div class="text-gray-300">Cryptocurrencies</div>
                 </div>
-                <button 
-                    type="submit"
-                    class="w-full btn-primary text-white py-3 rounded-lg font-semibold"
-                >
-                    Send Message
-                </button>
-            </form>
+                <div class="glassmorphism rounded-xl p-8">
+                    <div class="text-4xl md:text-5xl font-bold text-primary mb-2">99.9%</div>
+                    <div class="text-gray-300">Uptime</div>
+                </div>
+            </div>
         </div>
     </section>
 
-     <!-- Footer -->
+    <!-- Footer -->
     <footer class="bg-dark py-16" style="background-image: linear-gradient(135deg, #7C3AED 0%, #2563EB 100%), url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1500&q=80'); background-size: cover; background-blend-mode: multiply;">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 mb-8">

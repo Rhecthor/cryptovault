@@ -13,7 +13,7 @@ header('Content-Type: text/html; charset=UTF-8');
 
 // Check if form was submitted via POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: signup.html');
+    header('Location: signup.php');
     exit;
 }
 
@@ -250,10 +250,10 @@ if (empty($errors)) {
                     Please check your inbox and click the verification link to activate your account.
                 </p>
                 <div class="space-y-3">
-                    <a href="login.html" class="block w-full bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200">
+                    <a href="login.php" class="block w-full bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200">
                         Go to Login
                     </a>
-                    <a href="index.html" class="block w-full border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200">
+                    <a href="index.php" class="block w-full border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200">
                         Back to Home
                     </a>
                 </div>
@@ -271,10 +271,10 @@ if (empty($errors)) {
                 </div>
                 
                 <div class="space-y-3">
-                    <a href="signup.html" class="block w-full bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200">
+                    <a href="signup.php" class="block w-full bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200">
                         Try Again
                     </a>
-                    <a href="login.html" class="block w-full border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200">
+                    <a href="login.php" class="block w-full border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200">
                         Already Have Account?
                     </a>
                 </div>
